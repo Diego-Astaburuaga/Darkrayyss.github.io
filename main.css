@@ -1,0 +1,255 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Parche*/
+a{
+    font-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+a:active{
+    text-decoration: none;
+    color: black;
+}
+
+/*Body*/
+body {
+    margin: 0;
+    background-color: rgb(187, 216, 232);
+}
+
+/*Menu superior*/
+#menu ul{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(15, 93, 152, 1);
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    height: 44px;
+    overflow: visible;
+}
+#menu li{
+    float: left;
+}
+#menu li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 30px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1.3rem;
+}
+#menu li a:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+
+.start-button{
+    background-color: rgb(36, 131, 25);
+}
+
+/*Dropdown*/
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgb(131, 207, 207);
+    min-width: 100px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-top: 1px solid white;
+}
+
+.dropdown-content a:hover{
+    background-color: #161515;
+}
+
+.dropdown:hover .dropdown-btn{
+    background-color: rgba(15, 93, 152, 0.4);
+}
+
+.dropdown:hover .dropdown-content{
+    margin: 0px;
+    display: block;
+}
+
+/*Header*/
+header{
+    background-image: url("Images/17010-4k.jpg");
+    background-size: cover;
+    text-align: center;
+    padding: 20px ;
+    border-top: solid rgba(0, 0, 0, 0.503) 64px;
+    border-bottom: solid rgba(0, 0, 0, 0.503) 20px;
+}
+header h1{
+    color: rgba(255, 255, 255, 0.853);
+    font-size: 4rem;
+    padding: 8%;
+}
+
+/*Section*/
+
+section{
+    margin: 0px 70px;
+    padding: 20px;
+}
+
+
+/*post*/
+.post{
+    background-color: rgb(255, 250, 250);
+    display: inline-block;
+    height: 450px;
+    width: 370px;
+    margin: 2%;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0rem 1rem 1rem rgb(0,0,0,0.3);
+    cursor: pointer;
+}
+
+
+.post h2{
+    text-align: center;
+    margin: 0;
+    padding: 3% 0%;
+    padding-bottom: 0%;
+    font-size: 150%;
+}
+
+.post .minititle{
+    color:#bbb;
+    font-size:14px;
+    text-align:center;
+    padding: 4% 3%;
+}
+
+.post .container{
+    text-align: center;
+    padding: 100px 0%;
+    margin: none;
+    overflow: hidden;
+    color: rgba(0, 0, 0, 0);
+}
+
+.post .texto{
+    color:black;
+    font-size: 15px;
+    text-align:center;
+    padding: 5% 3%;
+}
+
+/*Articulos*/
+
+.articulo{
+    background-color: rgb(255, 250, 250);
+    display: inline-block;
+    width: 90%;
+    padding: 1%;
+    margin: 2%;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0rem 1rem 1rem rgb(0,0,0,0.3);
+}
+
+
+.articulo h2{
+    padding: 3px;
+    font-size: 1rem;
+}
+
+.articulo p{
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+    margin-right: 40px;
+    font-size: 1.3em;
+    font-style: initial;
+}
+
+.articulo ul {
+    list-style: none;
+}
+.articulo ul li{
+    padding: 15px;
+    border-bottom: solid 2px black;
+    margin-right: 40px;
+}
+.articulo ul li h3{
+    font-size: 2rem;
+}
+
+
+/*Footer*/
+footer{
+    margin: 0;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+    background-color: rgb(33, 33, 33);
+    padding: 4px 8px;
+}
+
+footer h2{
+    font-size: 2.3rem;
+}
+
+footer span{
+    display: inline;
+}
+
+footer a{
+    font-size: 1.5rem;
+    color: rgba(166, 98, 230, 0.634);
+    padding: 1%  2%;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    float: right;
+}
+
+footer a:hover{
+    color: cornflowerblue;
+}
+
+.videolink{
+    margin: 10px;
+}
+
+/*Falta organizar bien*/
+
+.nextpage{
+    display: block;
+    text-align: center;
+    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(205, 204, 204);
+    padding: 10px;
+    border-radius: 60px;
+}
+
+#presentation{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    width: 40rem;
+    float: left;
+    margin-top: 90px;
+    /* overflow: hidden; */
+}
