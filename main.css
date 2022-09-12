@@ -1,23 +1,13 @@
-html{
-    font-family: 'Roboto', sans-serif;
-}
+html{font-family: 'Roboto', sans-serif;}
 
 /*Parche*/
-a{
-    font-style: none;
-    text-decoration: none;
-    color: black;
-}
-
-a:active{
-    text-decoration: none;
-    color: black;
-}
+a{font-style: none;text-decoration: none;color: black;}
+a:active{text-decoration: none;color: black;}
 
 /*Body*/
 body {
-    margin: 0;
-    background-color: rgb(187, 216, 232);
+    margin: 0;background-color: rgb(187, 198, 232);
+    background-image: linear-gradient(black ,rgba(101, 125, 197, 0.526),white);
 }
 
 /*Menu superior*/
@@ -32,33 +22,22 @@ body {
     height: 44px;
     overflow: visible;
 }
-#menu li{
-    float: left;
-}
+#menu li{float: left;}
 #menu li a{
     display: block;
     color: white;
     text-align: center;
-    padding: 10px 30px;
+    padding: 9px 30px;
     text-decoration: none;
     transition: color 0.3s ease;
-    font-size: 1.3rem;
+    font-size: 22px;
 }
-#menu li a:hover{
-    background-color: rgba(0,0,0,0.4);
-}
-
-.start-button{
-    background-color: rgb(36, 131, 25);
-}
+#menu li a:hover{background-color: rgba(0,0,0,0.4);}
+.start-button{background-color: rgb(36, 131, 25);}
 
 /*Dropdown*/
 
-.dropdown{
-    position: relative;
-    display: inline-block;
-}
-
+.dropdown{position: relative;display: inline-block;}
 .dropdown-content{
     display: none;
     position: absolute;
@@ -66,7 +45,6 @@ body {
     min-width: 100px;
     box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
 }
-
 .dropdown-content a{
     color: black;
     padding: 12px 16px;
@@ -74,15 +52,12 @@ body {
     display: block;
     border-top: 1px solid white;
 }
-
 .dropdown-content a:hover{
     background-color: #161515;
 }
-
 .dropdown:hover .dropdown-btn{
     background-color: rgba(15, 93, 152, 0.4);
 }
-
 .dropdown:hover .dropdown-content{
     margin: 0px;
     display: block;
@@ -104,12 +79,7 @@ header h1{
 }
 
 /*Section*/
-
-section{
-    margin: 0px 70px;
-    padding: 20px;
-}
-
+section{margin: 0px 70px;padding: 20px;}
 
 /*post*/
 .post{
@@ -124,8 +94,10 @@ section{
     box-shadow: 0rem 1rem 1rem rgb(0,0,0,0.3);
     cursor: pointer;
 }
-
-
+.post:hover{
+    transition: 0.4s;
+    transform: scale(1.05,1.05);
+}
 .post h2{
     text-align: center;
     margin: 0;
